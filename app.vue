@@ -1,9 +1,9 @@
 <template>
   <div class="h-svh w-screen flex flex-col">
     <!-- Top bar -->
-    <header class="bg-gray-800 text-white p-4">
+    <header class="bg-blue-950 text-white p-4">
       <h1 class="text-xl font-bold text-center">
-        Self Improvement App
+        Neural Nest
       </h1>
     </header>
 
@@ -15,17 +15,21 @@
     <!-- Bottom bar -->
     <footer class="bg-gray-800 text-white p-4 flex justify-between items-center">
       <div class="">
-        <UButton to="/">
+        <UButton to="/" color="white" variant="ghost">
           Home
         </UButton>
-        <UButton to="/wimhof">
+        <UButton to="/wimhof" color="white" variant="ghost">
           Wimhof
         </UButton>
       </div>
-      <span>© 2024 Floo App</span>
-    </footer>
 
-    <!-- Toast notifications -->
-    <UNotifications />
+      <span>
+        <NuxtLink to="https://floo.one" target="_blank">
+          © 2024 Neural Nest
+          <UBadge color="gray" variant="solid">by floo.one</UBadge>
+        </NuxtLink>
+      </span>
+    </footer>
   </div>
+  <UNotifications />
 </template>
